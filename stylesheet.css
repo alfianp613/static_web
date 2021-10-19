@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'lemon-medium'; /* Change to your font's name. */
+  src: url('font/LEMONMILK-Medium.otf'); /* Change to match your font file's location. */
+}
+@font-face {
+  font-family: 'retroica'; /* Change to your font's name. */
+  src: url('font/Retroica.ttf'); /* Change to match your font file's location. */
+}
+@font-face {
+  font-family: 'bebasneue'; /* Change to your font's name. */
+  src: url('font/BebasNeue-Regular.ttf'); /* Change to match your font file's location. */
+}
+
+header {
+    width: 100%;
+  }
+
+.background {
+  height: 400px;
+  background: url(pict/head.png);
+  background-position: 50%;
+  background-size: cover;
+}
+  
+.judul {
+  font-family: 'lemon-medium';
+  padding-top: 150px;
+  text-align: center;
+  font-size: 60px;
+  color: black;
+}
+
+.sub-judul{
+  font-family: 'retroica';
+  padding-top: 5px;
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+
+.blog {
+  font-size: 20px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: rgba(219, 208, 192,0.2);
+  padding: 10px; 
+  transition: 0.4s; 
+  text-align: center;
+  position: fixed; 
+  width: 100%;
+  top: 0; 
+  z-index: 99;
+}
+
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration:none;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: "bebasneue";
+}
+
+
+#navbar #nav-logo {
+  font-size: 0px;
+  transition: 0.4s;
+  font-family: 'lemon-medium'
+}
+
+#navbar #nav-sub {
+  font-size: 0px;
+}
+
+#navbar-right {
+  float: right;
+}
+
+
+#navbar a:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important; 
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+.content {
+  font-family: Arial;
+  padding: 20px;
+  background: #F9E4C8;
+}
+
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.post-img {
+  width: 100%;
+  height: 100%;
+}
+.side-img {
+  width: 100%;
+  height: 100%;
+}
+
+.popular a {
+  background-image: url(dota2openai.jpg);
+}
+
+
+.card {
+   background-color: #FAEEE0;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.card p {
+  text-align: justify;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: left;
+  background: #F9CF93;
+}
+
+.judul-footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 60px;
+  color: black;
+  font-family: 'lemon-medium';
+}
+
+.footer h4 {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  font-family: Sans-serif;
+}
+
+.container {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.container a:hover{
+  opacity: 0.5;
+}
+
+.icon-footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none;
+  display:inline-block;
+  text-align: center;
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.instagram:hover
+{
+  background-color: #405de6
+}
+
+.social-icons a.github:hover
+{
+  background-color: black
+}
